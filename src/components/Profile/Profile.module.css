@@ -1,0 +1,69 @@
+.cardContent {
+  width: 230px;
+  border: 1px solid #121212;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #fbf8f8;
+  margin: 50px auto;
+}
+
+.image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 20px auto;
+  background-color: #000;
+}
+
+.userName {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.userInfo {
+  color: #888;
+  margin: 0;
+  font-size: 14px;
+}
+
+.cardContent ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #b8b7b7;
+  background-color: #dedbdb;
+  border-radius: 0 0 8px 8px;
+}
+
+.cardContent li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 10px;
+  flex: 1;
+}
+
+.cardContent li:first-child {
+  border-right: 1px solid #b8b7b7;
+}
+
+.cardContent li:last-child {
+  border-left: 1px solid #b8b7b7;
+}
+
+.cardContent li span:first-child {
+  font-size: 12px;
+}
+
+.cardContent li span:last-child {
+  font-size: 16px;
+
+  font-weight: bold;
+}
