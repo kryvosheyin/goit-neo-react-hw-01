@@ -2,14 +2,13 @@ import "./App.css";
 import Profile from "../Profile/Profile";
 import userData from "../../data/user-data.json";
 import friendsData from "../../data/friends.json";
+import transactionsData from "../../data/transactions.json";
 import FriendList from "../FriendList/FriendList";
+import TransactionHistory from "../TransactionHistory/TransactionHistory";
 
 function App() {
-  console.log(friendsData);
   return (
     <>
-      <h2> Task 1</h2>
-      <hr />
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -18,8 +17,9 @@ function App() {
         stats={userData.stats}
       />
       <hr />
-      <h2>Task 2</h2>
       <FriendList friends={friendsData} />
+      <hr />
+      <TransactionHistory items={transactionsData} />
     </>
   );
 }
